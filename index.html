@@ -1,0 +1,431 @@
+# [AQUÍ VAS A COPIAR EL CONTENIDO COMPLETO DEL index.html DEL ARTEFACT ANTERIOR]
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Mojica - Desarrollador y Consultor Tecnológico</title>
+    <meta name="description" content="Luis Mojica - Desarrollador, consultor tecnológico y especialista en automatización. Servicios de desarrollo web, integración de sistemas y soluciones digitales.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://luisfemojica.com/">
+    <meta property="og:title" content="Luis Mojica - Desarrollador y Consultor Tecnológico">
+    <meta property="og:description" content="Desarrollador, consultor tecnológico y especialista en automatización.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://luisfemojica.com/">
+    <meta property="twitter:title" content="Luis Mojica - Desarrollador y Consultor Tecnológico">
+    <meta property="twitter:description" content="Desarrollador, consultor tecnológico y especialista en automatización.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        main {
+            padding-top: 100px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #fff, #f0f0f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .cta-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .services {
+            background: white;
+            padding: 5rem 0;
+        }
+        
+        .services h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .service-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .about {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 5rem 0;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+        
+        .about p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .tech-tag {
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .contact {
+            background: #333;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Luis Mojica</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>Luis Mojica</h1>
+                <p>Desarrollador y Consultor Tecnológico</p>
+                <p>Especialista en automatización, integración de sistemas y soluciones digitales</p>
+                <a href="#contacto" class="cta-button">Trabajemos Juntos</a>
+            </div>
+        </section>
+
+        <section id="servicios" class="services">
+            <div class="container">
+                <h2>Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🚀</div>
+                        <h3>Desarrollo Web</h3>
+                        <p>Creación de sitios web modernos, rápidos y responsivos utilizando las últimas tecnologías.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⚙️</div>
+                        <h3>Automatización</h3>
+                        <p>Implementación de flujos de trabajo automatizados para optimizar procesos empresariales.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔗</div>
+                        <h3>Integración de Sistemas</h3>
+                        <p>Conexión de diferentes plataformas y APIs para crear ecosistemas digitales cohesivos.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">☁️</div>
+                        <h3>Infraestructura Cloud</h3>
+                        <p>Diseño y gestión de infraestructuras escalables en la nube y servidores locales.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Soluciones Digitales</h3>
+                        <p>Desarrollo de aplicaciones y herramientas personalizadas para necesidades específicas.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛡️</div>
+                        <h3>Consultoría Tecnológica</h3>
+                        <p>Asesoramiento estratégico para la transformación digital de tu empresa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div>
+                        <h2>Sobre Mí</h2>
+                        <p>Soy un desarrollador apasionado con amplia experiencia en la creación de soluciones tecnológicas innovadoras. Me especializo en automatización de procesos, integración de sistemas y desarrollo de aplicaciones web.</p>
+                        <p>Mi enfoque se centra en proporcionar soluciones eficientes y escalables que impulsen el crecimiento de las empresas. Trabajo con tecnologías modernas y mejores prácticas para garantizar resultados de alta calidad.</p>
+                        <p>Además de mi trabajo como desarrollador, mantengo mi propia infraestructura de servidores con servicios como Home Assistant, N8N, Plex y más, lo que me permite estar siempre actualizado con las últimas tendencias tecnológicas.</p>
+                    </div>
+                    <div>
+                        <h3>Stack Tecnológico</h3>
+                        <div class="tech-stack">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">APIs</span>
+                            <span class="tech-tag">N8N</span>
+                            <span class="tech-tag">Home Assistant</span>
+                            <span class="tech-tag">Nginx</span>
+                            <span class="tech-tag">Tailscale</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2>Contacto</h2>
+                <p>¿Tienes un proyecto en mente? Me encantaría escuchar sobre él.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <a href="mailto:contacto@luisfemojica.com">contacto@luisfemojica.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span>💼</span>
+                        <a href="https://linkedin.com/in/luismojica" target="_blank">LinkedIn</a>
+                    </div>
+                    <div class="contact-item">
+                        <span>🐙</span>
+                        <a href="https://github.com/luismojica" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Luis Mojica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling para los enlaces de navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animación de aparición para las tarjetas de servicio
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(50px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>

@@ -40,23 +40,13 @@
         }
         
         header {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* Header mejorado cuando se hace scroll */
-        header.scrolled {
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
         }
         
         nav {
@@ -71,127 +61,23 @@
             font-weight: bold;
             color: white;
             text-decoration: none;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-            transition: all 0.3s ease;
-        }
-        
-        /* Logo color cuando se hace scroll */
-        header.scrolled .logo {
-            color: #333;
-            text-shadow: none;
         }
         
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 1rem;
+            gap: 2rem;
         }
         
         .nav-links a {
             color: white;
             text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            padding: 0.7rem 1.2rem;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-            background: rgba(255, 255, 255, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            backdrop-filter: blur(10px);
-            position: relative;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
         }
         
         .nav-links a:hover {
-            background: rgba(255, 255, 255, 0.3);
-            border-color: rgba(255, 255, 255, 0.5);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-        }
-        
-        /* Nav links cuando se hace scroll */
-        header.scrolled .nav-links a {
-            color: #333;
-            text-shadow: none;
-            background: rgba(102, 126, 234, 0.1);
-            border-color: rgba(102, 126, 234, 0.25);
-        }
-        
-        header.scrolled .nav-links a:hover {
-            background: rgba(102, 126, 234, 0.2);
-            border-color: rgba(102, 126, 234, 0.4);
-            color: #667eea;
-        }
-        
-        /* Menu hamburger para móviles */
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            padding: 0.5rem;
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.15);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            transition: all 0.3s ease;
-        }
-        
-        .menu-toggle:hover {
-            background: rgba(255, 255, 255, 0.25);
-        }
-        
-        .menu-toggle span {
-            width: 25px;
-            height: 3px;
-            background: white;
-            margin: 3px 0;
-            transition: 0.3s;
-            border-radius: 2px;
-        }
-        
-        header.scrolled .menu-toggle {
-            background: rgba(102, 126, 234, 0.1);
-            border-color: rgba(102, 126, 234, 0.25);
-        }
-        
-        header.scrolled .menu-toggle span {
-            background: #333;
-        }
-        
-        /* Mobile menu */
-        .nav-links.mobile-menu {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(20px);
-            flex-direction: column;
-            gap: 0;
-            display: none;
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-        }
-        
-        .nav-links.mobile-menu.active {
-            display: flex;
-        }
-        
-        .nav-links.mobile-menu a {
-            color: #333;
-            text-shadow: none;
-            background: transparent;
-            border: none;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-            border-radius: 0;
-            padding: 1rem 2rem;
-            text-align: center;
-        }
-        
-        .nav-links.mobile-menu a:hover {
-            background: rgba(102, 126, 234, 0.1);
-            transform: none;
-            box-shadow: none;
+            opacity: 0.8;
         }
         
         main {
@@ -442,11 +328,7 @@
         }
         
         @media (max-width: 768px) {
-            .menu-toggle {
-                display: flex;
-            }
-            
-            .nav-links:not(.mobile-menu) {
+            .nav-links {
                 display: none;
             }
             
@@ -471,28 +353,10 @@
     </style>
 </head>
 <body>
-    <header id="header">
+    <header>
         <nav class="container">
             <a href="#" class="logo">Luis Mojica</a>
-            
-            <!-- Menu hamburger para móviles -->
-            <div class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            
-            <!-- Menu desktop -->
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            
-            <!-- Menu mobile -->
-            <ul class="nav-links mobile-menu" id="mobileMenu">
+            <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
@@ -659,32 +523,6 @@
     </footer>
 
     <script>
-        // Header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menuToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
-
-        menuToggle.addEventListener('click', function() {
-            mobileMenu.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on a link
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                mobileMenu.classList.remove('active');
-            });
-        });
-
         // Smooth scrolling para los enlaces de navegación
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {

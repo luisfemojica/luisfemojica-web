@@ -1,22 +1,23 @@
+# [AQUÍ VAS A COPIAR EL CONTENIDO COMPLETO DEL index.html DEL ARTEFACT ANTERIOR]
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Mojica - Desarrollador Cloud y Especialista en Automatización</title>
-    <meta name="description" content="Luis Mojica - Desarrollador Full Stack, especialista en infraestructura cloud AWS, automatización y soluciones digitales escalables.">
+    <title>Luis Mojica - Desarrollador y Consultor Tecnológico</title>
+    <meta name="description" content="Luis Mojica - Desarrollador, consultor tecnológico y especialista en automatización. Servicios de desarrollo web, integración de sistemas y soluciones digitales.">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://luisfemojica.com/">
-    <meta property="og:title" content="Luis Mojica - Desarrollador Cloud y Especialista en Automatización">
-    <meta property="og:description" content="Especialista en infraestructura cloud AWS, automatización y desarrollo de soluciones digitales escalables.">
+    <meta property="og:title" content="Luis Mojica - Desarrollador y Consultor Tecnológico">
+    <meta property="og:description" content="Desarrollador, consultor tecnológico y especialista en automatización.">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://luisfemojica.com/">
-    <meta property="twitter:title" content="Luis Mojica - Desarrollador Cloud y Especialista en Automatización">
-    <meta property="twitter:description" content="Especialista en infraestructura cloud AWS, automatización y desarrollo de soluciones digitales escalables.">
+    <meta property="twitter:title" content="Luis Mojica - Desarrollador y Consultor Tecnológico">
+    <meta property="twitter:description" content="Desarrollador, consultor tecnológico y especialista en automatización.">
     
     <style>
         * {
@@ -101,15 +102,8 @@
         
         .hero p {
             font-size: 1.3rem;
-            margin-bottom: 1rem;
-            opacity: 0.9;
-        }
-        
-        .hero .subtitle {
-            font-size: 1.1rem;
             margin-bottom: 2rem;
-            opacity: 0.8;
-            font-style: italic;
+            opacity: 0.9;
         }
         
         .cta-button {
@@ -220,70 +214,6 @@
             font-weight: 500;
         }
         
-        .tech-tag.cloud {
-            background: #ff6b6b;
-        }
-        
-        .tech-tag.devops {
-            background: #4ecdc4;
-        }
-        
-        .achievements {
-            background: #2c3e50;
-            color: white;
-            padding: 4rem 0;
-        }
-        
-        .achievements h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-        }
-        
-        .achievement-card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 2rem;
-            border-radius: 15px;
-            margin-bottom: 2rem;
-            border-left: 4px solid #3498db;
-        }
-        
-        .achievement-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #3498db;
-        }
-        
-        .achievement-card p {
-            opacity: 0.9;
-            line-height: 1.6;
-        }
-        
-        .achievement-metrics {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        
-        .metric {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 1rem;
-            border-radius: 10px;
-        }
-        
-        .metric-value {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #3498db;
-        }
-        
-        .metric-label {
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-        
         .contact {
             background: #333;
             color: white;
@@ -321,12 +251,6 @@
             padding: 2rem 0;
         }
         
-        .footer-note {
-            opacity: 0.7;
-            font-size: 0.9rem;
-            margin-top: 1rem;
-        }
-        
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -345,10 +269,6 @@
                 flex-direction: column;
                 gap: 1rem;
             }
-            
-            .achievement-metrics {
-                grid-template-columns: repeat(2, 1fr);
-            }
         }
     </style>
 </head>
@@ -360,7 +280,6 @@
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -370,45 +289,45 @@
         <section id="inicio" class="hero">
             <div class="container">
                 <h1>Luis Mojica</h1>
-                <p>Desarrollador Cloud y Especialista en Automatización</p>
-                <p class="subtitle">Infraestructura AWS • CI/CD • DevOps • Soluciones Escalables</p>
-                <a href="#contacto" class="cta-button">Colaboremos</a>
+                <p>Desarrollador y Consultor Tecnológico</p>
+                <p>Especialista en automatización, integración de sistemas y soluciones digitales</p>
+                <a href="#contacto" class="cta-button">Trabajemos Juntos</a>
             </div>
         </section>
 
         <section id="servicios" class="services">
             <div class="container">
-                <h2>Servicios Especializados</h2>
+                <h2>Servicios</h2>
                 <div class="services-grid">
                     <div class="service-card">
-                        <div class="service-icon">☁️</div>
-                        <h3>Infraestructura Cloud AWS</h3>
-                        <p>Diseño e implementación de arquitecturas escalables usando S3, CloudFront, Route 53 y Certificate Manager con automatización completa y CI/CD.</p>
-                    </div>
-                    <div class="service-card">
                         <div class="service-icon">🚀</div>
-                        <h3>Desarrollo Web Avanzado</h3>
-                        <p>Sitios web modernos con performance optimizada, CDN global, SSL automático y deployments automatizados usando las mejores prácticas.</p>
+                        <h3>Desarrollo Web</h3>
+                        <p>Creación de sitios web modernos, rápidos y responsivos utilizando las últimas tecnologías.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">⚙️</div>
-                        <h3>Automatización DevOps</h3>
-                        <p>Implementación de pipelines CI/CD, Infrastructure as Code, monitoreo automatizado y workflows de desarrollo eficientes.</p>
+                        <h3>Automatización</h3>
+                        <p>Implementación de flujos de trabajo automatizados para optimizar procesos empresariales.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">🔗</div>
                         <h3>Integración de Sistemas</h3>
-                        <p>Conexión de plataformas heterogéneas, APIs, microservicios y creación de ecosistemas digitales cohesivos y escalables.</p>
+                        <p>Conexión de diferentes plataformas y APIs para crear ecosistemas digitales cohesivos.</p>
                     </div>
                     <div class="service-card">
-                        <div class="service-icon">🏠</div>
-                        <h3>Smart Home & IoT</h3>
-                        <p>Implementación de sistemas domóticos con Home Assistant, N8N, integración de dispositivos IoT y automatizaciones inteligentes.</p>
+                        <div class="service-icon">☁️</div>
+                        <h3>Infraestructura Cloud</h3>
+                        <p>Diseño y gestión de infraestructuras escalables en la nube y servidores locales.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Soluciones Digitales</h3>
+                        <p>Desarrollo de aplicaciones y herramientas personalizadas para necesidades específicas.</p>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">🛡️</div>
                         <h3>Consultoría Tecnológica</h3>
-                        <p>Asesoramiento estratégico para transformación digital, migración cloud, optimización de infraestructura y adopción de nuevas tecnologías.</p>
+                        <p>Asesoramiento estratégico para la transformación digital de tu empresa.</p>
                     </div>
                 </div>
             </div>
@@ -419,30 +338,23 @@
                 <div class="about-content">
                     <div>
                         <h2>Sobre Mí</h2>
-                        <p>Soy un desarrollador especializado en infraestructura cloud y automatización, con experiencia comprobada en la migración exitosa de sistemas locales a arquitecturas cloud empresariales.</p>
-                        <p>Mi expertise se centra en AWS, donde he implementado soluciones completas con S3, CloudFront, Route 53, Certificate Manager y automatización de deployments. Trabajo con metodologías DevOps e Infrastructure as Code para garantizar escalabilidad y confiabilidad.</p>
-                        <p>Gestiono mi propia infraestructura de servidores con servicios como Home Assistant, N8N, Plex, Docker y más, lo que me mantiene actualizado con las últimas tendencias tecnológicas y me permite experimentar con soluciones innovadoras.</p>
+                        <p>Soy un desarrollador apasionado con amplia experiencia en la creación de soluciones tecnológicas innovadoras. Me especializo en automatización de procesos, integración de sistemas y desarrollo de aplicaciones web.</p>
+                        <p>Mi enfoque se centra en proporcionar soluciones eficientes y escalables que impulsen el crecimiento de las empresas. Trabajo con tecnologías modernas y mejores prácticas para garantizar resultados de alta calidad.</p>
+                        <p>Además de mi trabajo como desarrollador, mantengo mi propia infraestructura de servidores con servicios como Home Assistant, N8N, Plex y más, lo que me permite estar siempre actualizado con las últimas tendencias tecnológicas.</p>
                     </div>
                     <div>
                         <h3>Stack Tecnológico</h3>
                         <div class="tech-stack">
-                            <span class="tech-tag cloud">AWS S3</span>
-                            <span class="tech-tag cloud">CloudFront</span>
-                            <span class="tech-tag cloud">Route 53</span>
-                            <span class="tech-tag cloud">Certificate Manager</span>
-                            <span class="tech-tag devops">Git/GitHub</span>
-                            <span class="tech-tag devops">CI/CD</span>
-                            <span class="tech-tag devops">Docker</span>
-                            <span class="tech-tag devops">Infrastructure as Code</span>
                             <span class="tech-tag">JavaScript</span>
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Node.js</span>
                             <span class="tech-tag">React</span>
+                            <span class="tech-tag">Docker</span>
                             <span class="tech-tag">Linux</span>
-                            <span class="tech-tag">Nginx</span>
                             <span class="tech-tag">APIs</span>
                             <span class="tech-tag">N8N</span>
                             <span class="tech-tag">Home Assistant</span>
+                            <span class="tech-tag">Nginx</span>
                             <span class="tech-tag">Tailscale</span>
                         </div>
                     </div>
@@ -450,51 +362,10 @@
             </div>
         </section>
 
-        <section id="proyectos" class="achievements">
-            <div class="container">
-                <h2>Proyecto Destacado</h2>
-                <div class="achievement-card">
-                    <h3>🚀 Migración Cloud AWS - Agosto 2025</h3>
-                    <p>Migración exitosa de sitio web desde infraestructura local a AWS Cloud con implementación completa de CDN global, SSL automático, DNS management y pipeline CI/CD automatizado.</p>
-                    
-                    <div class="achievement-metrics">
-                        <div class="metric">
-                            <div class="metric-value">3</div>
-                            <div class="metric-label">Días de migración</div>
-                        </div>
-                        <div class="metric">
-                            <div class="metric-value">99.99%</div>
-                            <div class="metric-label">Uptime SLA</div>
-                        </div>
-                        <div class="metric">
-                            <div class="metric-value">400+</div>
-                            <div class="metric-label">Edge Locations</div>
-                        </div>
-                        <div class="metric">
-                            <div class="metric-value">50ms</div>
-                            <div class="metric-label">Latencia Global</div>
-                        </div>
-                        <div class="metric">
-                            <div class="metric-value">~90%</div>
-                            <div class="metric-label">Reducción Costos</div>
-                        </div>
-                        <div class="metric">
-                            <div class="metric-value">100%</div>
-                            <div class="metric-label">Automatización</div>
-                        </div>
-                    </div>
-                    
-                    <p style="margin-top: 1.5rem; opacity: 0.8;">
-                        <strong>Tecnologías implementadas:</strong> AWS S3, CloudFront, Route 53, Certificate Manager, Infrastructure as Code, Git/GitHub, CI/CD Pipeline, DNS Management, SSL/TLS automation.
-                    </p>
-                </div>
-            </div>
-        </section>
-
         <section id="contacto" class="contact">
             <div class="container">
                 <h2>Contacto</h2>
-                <p>¿Tienes un proyecto de migración cloud o automatización? Me encantaría colaborar contigo.</p>
+                <p>¿Tienes un proyecto en mente? Me encantaría escuchar sobre él.</p>
                 <div class="contact-info">
                     <div class="contact-item">
                         <span>📧</span>
@@ -506,7 +377,7 @@
                     </div>
                     <div class="contact-item">
                         <span>🐙</span>
-                        <a href="https://github.com/luisfemojica" target="_blank">GitHub</a>
+                        <a href="https://github.com/luismojica" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -516,9 +387,6 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 Luis Mojica. Todos los derechos reservados.</p>
-            <p class="footer-note">
-                🚀 Sitio migrado exitosamente a AWS Cloud • CDN Global • SSL Automático • CI/CD Pipeline
-            </p>
         </div>
     </footer>
 
@@ -552,52 +420,11 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.service-card, .achievement-card').forEach(card => {
+        document.querySelectorAll('.service-card').forEach(card => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(50px)';
             card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(card);
-        });
-
-        // Contador animado para métricas
-        function animateCounter(element, target) {
-            let current = 0;
-            const increment = target / 100;
-            const timer = setInterval(() => {
-                current += increment;
-                if (current >= target) {
-                    element.textContent = target.toString().includes('%') ? target : target.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-                    clearInterval(timer);
-                } else {
-                    element.textContent = Math.floor(current).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-                }
-            }, 20);
-        }
-
-        // Observar métricas para animación
-        const metricsObserver = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const valueElement = entry.target.querySelector('.metric-value');
-                    const value = valueElement.textContent;
-                    if (!valueElement.dataset.animated) {
-                        valueElement.dataset.animated = 'true';
-                        if (value.includes('%')) {
-                            animateCounter(valueElement, parseFloat(value));
-                        } else if (value.includes('+')) {
-                            animateCounter(valueElement, parseInt(value));
-                        } else if (value.includes('ms')) {
-                            animateCounter(valueElement, parseInt(value));
-                        } else {
-                            animateCounter(valueElement, parseInt(value));
-                        }
-                    }
-                }
-            });
-        }, { threshold: 0.5 });
-
-        document.querySelectorAll('.metric').forEach(metric => {
-            metricsObserver.observe(metric);
         });
     </script>
 </body>
